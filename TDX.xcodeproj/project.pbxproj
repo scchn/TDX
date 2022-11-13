@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		094892F829101C1F00525CAE /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 094892F729101C1F00525CAE /* RxCocoa */; };
+		094892FA29101C1F00525CAE /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 094892F929101C1F00525CAE /* RxRelay */; };
+		094892FC29101C1F00525CAE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 094892FB29101C1F00525CAE /* RxSwift */; };
+		094892FF29101CC800525CAE /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 094892FE29101CC800525CAE /* Moya */; };
+		0948930129101CC800525CAE /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 0948930029101CC800525CAE /* RxMoya */; };
+		0948930429101CE600525CAE /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 0948930329101CE600525CAE /* KeychainAccess */; };
+		0986DCBC290D7BB400BD558A /* ApiErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986DCBB290D7BB400BD558A /* ApiErrorMessage.swift */; };
+		0986DCBE290D833E00BD558A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0986DCBD290D833E00BD558A /* ApiError.swift */; };
+		098F5CAE29088B9C008BEFD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CAD29088B9C008BEFD9 /* AppDelegate.swift */; };
+		098F5CB029088B9C008BEFD9 /* CCTVMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CAF29088B9C008BEFD9 /* CCTVMapViewController.swift */; };
+		098F5CB229088B9D008BEFD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098F5CB129088B9D008BEFD9 /* Assets.xcassets */; };
+		098F5CB529088B9D008BEFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098F5CB329088B9D008BEFD9 /* Main.storyboard */; };
+		098F5CCA29088C89008BEFD9 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CC929088C89008BEFD9 /* Query.swift */; };
+		098F5CCE29088E73008BEFD9 /* ApiTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CCD29088E73008BEFD9 /* ApiTargetType.swift */; };
+		098F5CD029088F5E008BEFD9 /* ApiRequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CCF29088F5E008BEFD9 /* ApiRequestPlugin.swift */; };
+		098F5CD329088FB9008BEFD9 /* ApiMonitorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CD229088FB9008BEFD9 /* ApiMonitorPlugin.swift */; };
+		098F5CD529088FDC008BEFD9 /* ApiProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CD429088FDC008BEFD9 /* ApiProviders.swift */; };
+		098F5CEB290895D2008BEFD9 /* TDXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CEA290895D2008BEFD9 /* TDXApp.swift */; };
+		098F5CF5290953DD008BEFD9 /* TokenApiApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CF4290953DD008BEFD9 /* TokenApiApiTarget.swift */; };
+		098F5CF729095607008BEFD9 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CF629095607008BEFD9 /* AuthApi.swift */; };
+		098F5CFA290958D3008BEFD9 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CF9290958D3008BEFD9 /* Token.swift */; };
+		098F5D0029095B40008BEFD9 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5CFF29095B40008BEFD9 /* AppStorage.swift */; };
+		098F5D0229096035008BEFD9 /* ApiRequestRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D0129096035008BEFD9 /* ApiRequestRetrier.swift */; };
+		098F5D0B2909634E008BEFD9 /* CCTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D0A2909634E008BEFD9 /* CCTV.swift */; };
+		098F5D0D290965A7008BEFD9 /* RoadSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D0C290965A7008BEFD9 /* RoadSection.swift */; };
+		098F5D0F290965AF008BEFD9 /* LookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D0E290965AF008BEFD9 /* LookingView.swift */; };
+		098F5D12290965BF008BEFD9 /* Bearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D11290965BF008BEFD9 /* Bearing.swift */; };
+		098F5D1629096761008BEFD9 /* CCTVFreewayApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D1529096761008BEFD9 /* CCTVFreewayApiTarget.swift */; };
+		098F5D18290968B9008BEFD9 /* RoadApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D17290968B9008BEFD9 /* RoadApi.swift */; };
+		098F5D1A29096B18008BEFD9 /* CCTVList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D1929096B18008BEFD9 /* CCTVList.swift */; };
+		098F5D1D2909773F008BEFD9 /* ApiVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D1C2909773F008BEFD9 /* ApiVersion.swift */; };
+		098F5D1F29097747008BEFD9 /* ApiCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D1E29097747008BEFD9 /* ApiCategory.swift */; };
+		098F5D2529098436008BEFD9 /* CCTVMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D2429098436008BEFD9 /* CCTVMapViewModel.swift */; };
+		098F5D34290AB537008BEFD9 /* CCTVMapWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D33290AB537008BEFD9 /* CCTVMapWindowController.swift */; };
+		098F5D3A290ABB77008BEFD9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D38290ABB77008BEFD9 /* LoadingViewController.swift */; };
+		098F5D3B290ABB77008BEFD9 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098F5D39290ABB77008BEFD9 /* LoadingViewController.xib */; };
+		098F5D3D290ABD3B008BEFD9 /* SolidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D3C290ABD3B008BEFD9 /* SolidView.swift */; };
+		098F5D3F290AC674008BEFD9 /* CCTVStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D3E290AC674008BEFD9 /* CCTVStream.swift */; };
+		098F5D42290AD6FA008BEFD9 /* NSImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D41290AD6FA008BEFD9 /* NSImage+Ext.swift */; };
+		098F5D44290AE438008BEFD9 /* NSViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D43290AE438008BEFD9 /* NSViewController+Ext.swift */; };
+		098F5D46290AECAF008BEFD9 /* MKCoordinateRegion+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D45290AECAF008BEFD9 /* MKCoordinateRegion+Ext.swift */; };
+		098F5D49290AEF27008BEFD9 /* CCTVSourcePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D48290AEF27008BEFD9 /* CCTVSourcePickerController.swift */; };
+		098F5D4C290AEFD9008BEFD9 /* CCTVSourceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D4B290AEFD9008BEFD9 /* CCTVSourceCategory.swift */; };
+		098F5D4E290AF353008BEFD9 /* CCTVSourcePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F5D4D290AF353008BEFD9 /* CCTVSourcePickerViewModel.swift */; };
+		09B2C919291153BE00E9452E /* XcapAppKit in Frameworks */ = {isa = PBXBuildFile; productRef = 09B2C918291153BE00E9452E /* XcapAppKit */; };
+		09B2C91C2911540400E9452E /* XcapRxKit in Frameworks */ = {isa = PBXBuildFile; productRef = 09B2C91B2911540400E9452E /* XcapRxKit */; };
+		09BBF05A290DA86A00B330FE /* City+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BBF059290DA86A00B330FE /* City+Ext.swift */; };
+		09F0FDD5290D26A500F04BF2 /* CCTVWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0FDD4290D26A500F04BF2 /* CCTVWebViewController.swift */; };
+		09F0FDD7290D358C00F04BF2 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0FDD6290D358C00F04BF2 /* City.swift */; };
+		09F0FDD9290D35E300F04BF2 /* CCTVSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0FDD8290D35E300F04BF2 /* CCTVSource.swift */; };
+		09F0FDDB290D3CB300F04BF2 /* CCTV+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0FDDA290D3CB300F04BF2 /* CCTV+Ext.swift */; };
+		09F0FDDD290D435D00F04BF2 /* CCTVClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0FDDC290D435D00F04BF2 /* CCTVClusterAnnotationView.swift */; };
+		09F0FDDE290D5A7100F04BF2 /* TDX-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 098F5D2029097A74008BEFD9 /* TDX-Config.plist */; };
+		8359A5A2290A1A7F00270A17 /* CCTVAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359A5A1290A1A7F00270A17 /* CCTVAnnotation.swift */; };
+		8359A5B2290A4D2F00270A17 /* CCTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359A5B1290A4D2F00270A17 /* CCTVViewController.swift */; };
+		8359A5B6290A5A9E00270A17 /* MapApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359A5B5290A5A9E00270A17 /* MapApi.swift */; };
+		8359A5BA290A5AC700270A17 /* DistrictLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359A5B9290A5AC700270A17 /* DistrictLocation.swift */; };
+		8359A5BC290A5AFB00270A17 /* GeoLocatingDistrictApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359A5BB290A5AFB00270A17 /* GeoLocatingDistrictApiTarget.swift */; };
+		8359A5BE290A5C7500270A17 /* CCTVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359A5BD290A5C7500270A17 /* CCTVViewModel.swift */; };
+		83F87F03290B9F9200951E0C /* CCTVCityApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F87F02290B9F9200951E0C /* CCTVCityApiTarget.swift */; };
+		83F87F05290BA4E300951E0C /* CCTVHighwayApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F87F04290BA4E300951E0C /* CCTVHighwayApiTarget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0986DCBB290D7BB400BD558A /* ApiErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorMessage.swift; sourceTree = "<group>"; };
+		0986DCBD290D833E00BD558A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		098F5CAA29088B9C008BEFD9 /* TDX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		098F5CAD29088B9C008BEFD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		098F5CAF29088B9C008BEFD9 /* CCTVMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVMapViewController.swift; sourceTree = "<group>"; };
+		098F5CB129088B9D008BEFD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		098F5CB429088B9D008BEFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		098F5CB629088B9D008BEFD9 /* TDX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TDX.entitlements; sourceTree = "<group>"; };
+		098F5CC929088C89008BEFD9 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		098F5CCD29088E73008BEFD9 /* ApiTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTargetType.swift; sourceTree = "<group>"; };
+		098F5CCF29088F5E008BEFD9 /* ApiRequestPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestPlugin.swift; sourceTree = "<group>"; };
+		098F5CD229088FB9008BEFD9 /* ApiMonitorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMonitorPlugin.swift; sourceTree = "<group>"; };
+		098F5CD429088FDC008BEFD9 /* ApiProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProviders.swift; sourceTree = "<group>"; };
+		098F5CEA290895D2008BEFD9 /* TDXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDXApp.swift; sourceTree = "<group>"; };
+		098F5CF4290953DD008BEFD9 /* TokenApiApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenApiApiTarget.swift; sourceTree = "<group>"; };
+		098F5CF629095607008BEFD9 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
+		098F5CF9290958D3008BEFD9 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		098F5CFF29095B40008BEFD9 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
+		098F5D0129096035008BEFD9 /* ApiRequestRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestRetrier.swift; sourceTree = "<group>"; };
+		098F5D0A2909634E008BEFD9 /* CCTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTV.swift; sourceTree = "<group>"; };
+		098F5D0C290965A7008BEFD9 /* RoadSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadSection.swift; sourceTree = "<group>"; };
+		098F5D0E290965AF008BEFD9 /* LookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingView.swift; sourceTree = "<group>"; };
+		098F5D11290965BF008BEFD9 /* Bearing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearing.swift; sourceTree = "<group>"; };
+		098F5D1529096761008BEFD9 /* CCTVFreewayApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVFreewayApiTarget.swift; sourceTree = "<group>"; };
+		098F5D17290968B9008BEFD9 /* RoadApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadApi.swift; sourceTree = "<group>"; };
+		098F5D1929096B18008BEFD9 /* CCTVList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVList.swift; sourceTree = "<group>"; };
+		098F5D1C2909773F008BEFD9 /* ApiVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiVersion.swift; sourceTree = "<group>"; };
+		098F5D1E29097747008BEFD9 /* ApiCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCategory.swift; sourceTree = "<group>"; };
+		098F5D2029097A74008BEFD9 /* TDX-Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TDX-Config.plist"; sourceTree = "<group>"; };
+		098F5D2429098436008BEFD9 /* CCTVMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVMapViewModel.swift; sourceTree = "<group>"; };
+		098F5D33290AB537008BEFD9 /* CCTVMapWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVMapWindowController.swift; sourceTree = "<group>"; };
+		098F5D38290ABB77008BEFD9 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		098F5D39290ABB77008BEFD9 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		098F5D3C290ABD3B008BEFD9 /* SolidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidView.swift; sourceTree = "<group>"; };
+		098F5D3E290AC674008BEFD9 /* CCTVStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVStream.swift; sourceTree = "<group>"; };
+		098F5D41290AD6FA008BEFD9 /* NSImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Ext.swift"; sourceTree = "<group>"; };
+		098F5D43290AE438008BEFD9 /* NSViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSViewController+Ext.swift"; sourceTree = "<group>"; };
+		098F5D45290AECAF008BEFD9 /* MKCoordinateRegion+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Ext.swift"; sourceTree = "<group>"; };
+		098F5D48290AEF27008BEFD9 /* CCTVSourcePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVSourcePickerController.swift; sourceTree = "<group>"; };
+		098F5D4B290AEFD9008BEFD9 /* CCTVSourceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVSourceCategory.swift; sourceTree = "<group>"; };
+		098F5D4D290AF353008BEFD9 /* CCTVSourcePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVSourcePickerViewModel.swift; sourceTree = "<group>"; };
+		09BBF059290DA86A00B330FE /* City+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+Ext.swift"; sourceTree = "<group>"; };
+		09F0FD7C290BFFCC00F04BF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		09F0FDD4290D26A500F04BF2 /* CCTVWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVWebViewController.swift; sourceTree = "<group>"; };
+		09F0FDD6290D358C00F04BF2 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		09F0FDD8290D35E300F04BF2 /* CCTVSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVSource.swift; sourceTree = "<group>"; };
+		09F0FDDA290D3CB300F04BF2 /* CCTV+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CCTV+Ext.swift"; sourceTree = "<group>"; };
+		09F0FDDC290D435D00F04BF2 /* CCTVClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVClusterAnnotationView.swift; sourceTree = "<group>"; };
+		8359A5A1290A1A7F00270A17 /* CCTVAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVAnnotation.swift; sourceTree = "<group>"; };
+		8359A5B1290A4D2F00270A17 /* CCTVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVViewController.swift; sourceTree = "<group>"; };
+		8359A5B3290A589300270A17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8359A5B5290A5A9E00270A17 /* MapApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapApi.swift; sourceTree = "<group>"; };
+		8359A5B9290A5AC700270A17 /* DistrictLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictLocation.swift; sourceTree = "<group>"; };
+		8359A5BB290A5AFB00270A17 /* GeoLocatingDistrictApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocatingDistrictApiTarget.swift; sourceTree = "<group>"; };
+		8359A5BD290A5C7500270A17 /* CCTVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVViewModel.swift; sourceTree = "<group>"; };
+		83F87F02290B9F9200951E0C /* CCTVCityApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVCityApiTarget.swift; sourceTree = "<group>"; };
+		83F87F04290BA4E300951E0C /* CCTVHighwayApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVHighwayApiTarget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		098F5CA729088B9C008BEFD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0948930129101CC800525CAE /* RxMoya in Frameworks */,
+				094892FC29101C1F00525CAE /* RxSwift in Frameworks */,
+				0948930429101CE600525CAE /* KeychainAccess in Frameworks */,
+				09B2C919291153BE00E9452E /* XcapAppKit in Frameworks */,
+				094892FA29101C1F00525CAE /* RxRelay in Frameworks */,
+				094892FF29101CC800525CAE /* Moya in Frameworks */,
+				094892F829101C1F00525CAE /* RxCocoa in Frameworks */,
+				09B2C91C2911540400E9452E /* XcapRxKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		097693D8290FB9B1003227FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		098F5CA129088B9C008BEFD9 = {
+			isa = PBXGroup;
+			children = (
+				8359A5B3290A589300270A17 /* README.md */,
+				098F5CAC29088B9C008BEFD9 /* TDX */,
+				098F5CAB29088B9C008BEFD9 /* Products */,
+				097693D8290FB9B1003227FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		098F5CAB29088B9C008BEFD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				098F5CAA29088B9C008BEFD9 /* TDX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		098F5CAC29088B9C008BEFD9 /* TDX */ = {
+			isa = PBXGroup;
+			children = (
+				09F0FD7D290C1B1E00F04BF2 /* Web API */,
+				098F5D072909631A008BEFD9 /* Models */,
+				098F5D4A290AEFCF008BEFD9 /* Enums */,
+				098F5D40290AD6EC008BEFD9 /* Extensions */,
+				098F5D0329096220008BEFD9 /* Utils */,
+				8359A59F290A1A6600270A17 /* UI */,
+				8359A5AE290A4D1500270A17 /* Scenes */,
+				098F5CAD29088B9C008BEFD9 /* AppDelegate.swift */,
+				098F5CB329088B9D008BEFD9 /* Main.storyboard */,
+				098F5CB129088B9D008BEFD9 /* Assets.xcassets */,
+				098F5D2029097A74008BEFD9 /* TDX-Config.plist */,
+				09F0FD7C290BFFCC00F04BF2 /* Info.plist */,
+				098F5CB629088B9D008BEFD9 /* TDX.entitlements */,
+			);
+			path = TDX;
+			sourceTree = "<group>";
+		};
+		098F5CD129088F97008BEFD9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				098F5CEC2908968D008BEFD9 /* Plugins */,
+				098F5D1B29097728008BEFD9 /* Types */,
+				098F5CEA290895D2008BEFD9 /* TDXApp.swift */,
+				098F5D0129096035008BEFD9 /* ApiRequestRetrier.swift */,
+				098F5CD429088FDC008BEFD9 /* ApiProviders.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		098F5CEC2908968D008BEFD9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				098F5CD229088FB9008BEFD9 /* ApiMonitorPlugin.swift */,
+				098F5CCF29088F5E008BEFD9 /* ApiRequestPlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		098F5CF3290953C3008BEFD9 /* AuthApi */ = {
+			isa = PBXGroup;
+			children = (
+				098F5CF8290958CD008BEFD9 /* Models */,
+				098F5CFB2909590E008BEFD9 /* Targets */,
+				098F5CF629095607008BEFD9 /* AuthApi.swift */,
+			);
+			path = AuthApi;
+			sourceTree = "<group>";
+		};
+		098F5CF8290958CD008BEFD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				098F5CF9290958D3008BEFD9 /* Token.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		098F5CFB2909590E008BEFD9 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				098F5CF4290953DD008BEFD9 /* TokenApiApiTarget.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		098F5D0329096220008BEFD9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				098F5CFF29095B40008BEFD9 /* AppStorage.swift */,
+				098F5D3E290AC674008BEFD9 /* CCTVStream.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		098F5D04290962F5008BEFD9 /* RoadApi */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D10290965BA008BEFD9 /* Enums */,
+				098F5D05290962FF008BEFD9 /* Models */,
+				098F5D0629096305008BEFD9 /* Targets */,
+				098F5D17290968B9008BEFD9 /* RoadApi.swift */,
+			);
+			path = RoadApi;
+			sourceTree = "<group>";
+		};
+		098F5D05290962FF008BEFD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D0E290965AF008BEFD9 /* LookingView.swift */,
+				098F5D0C290965A7008BEFD9 /* RoadSection.swift */,
+				098F5D0A2909634E008BEFD9 /* CCTV.swift */,
+				098F5D1929096B18008BEFD9 /* CCTVList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		098F5D0629096305008BEFD9 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D1529096761008BEFD9 /* CCTVFreewayApiTarget.swift */,
+				83F87F02290B9F9200951E0C /* CCTVCityApiTarget.swift */,
+				83F87F04290BA4E300951E0C /* CCTVHighwayApiTarget.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		098F5D072909631A008BEFD9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				098F5CC929088C89008BEFD9 /* Query.swift */,
+				09F0FDD8290D35E300F04BF2 /* CCTVSource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		098F5D10290965BA008BEFD9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D11290965BF008BEFD9 /* Bearing.swift */,
+				09F0FDD6290D358C00F04BF2 /* City.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		098F5D1B29097728008BEFD9 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D1E29097747008BEFD9 /* ApiCategory.swift */,
+				098F5D1C2909773F008BEFD9 /* ApiVersion.swift */,
+				098F5CCD29088E73008BEFD9 /* ApiTargetType.swift */,
+				0986DCBB290D7BB400BD558A /* ApiErrorMessage.swift */,
+				0986DCBD290D833E00BD558A /* ApiError.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		098F5D35290ABB39008BEFD9 /* LoadingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D38290ABB77008BEFD9 /* LoadingViewController.swift */,
+				098F5D39290ABB77008BEFD9 /* LoadingViewController.xib */,
+			);
+			path = LoadingViewController;
+			sourceTree = "<group>";
+		};
+		098F5D40290AD6EC008BEFD9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D41290AD6FA008BEFD9 /* NSImage+Ext.swift */,
+				098F5D43290AE438008BEFD9 /* NSViewController+Ext.swift */,
+				098F5D45290AECAF008BEFD9 /* MKCoordinateRegion+Ext.swift */,
+				09F0FDDA290D3CB300F04BF2 /* CCTV+Ext.swift */,
+				09BBF059290DA86A00B330FE /* City+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		098F5D47290AEF10008BEFD9 /* Source Picker */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D4D290AF353008BEFD9 /* CCTVSourcePickerViewModel.swift */,
+				098F5D48290AEF27008BEFD9 /* CCTVSourcePickerController.swift */,
+			);
+			path = "Source Picker";
+			sourceTree = "<group>";
+		};
+		098F5D4A290AEFCF008BEFD9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D4B290AEFD9008BEFD9 /* CCTVSourceCategory.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		09F0FD7D290C1B1E00F04BF2 /* Web API */ = {
+			isa = PBXGroup;
+			children = (
+				098F5CD129088F97008BEFD9 /* Network */,
+				098F5CF3290953C3008BEFD9 /* AuthApi */,
+				8359A5B4290A5A9100270A17 /* MapApi */,
+				098F5D04290962F5008BEFD9 /* RoadApi */,
+			);
+			path = "Web API";
+			sourceTree = "<group>";
+		};
+		8359A59F290A1A6600270A17 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D35290ABB39008BEFD9 /* LoadingViewController */,
+				8359A5A0290A1A6F00270A17 /* Annotations */,
+				098F5D3C290ABD3B008BEFD9 /* SolidView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8359A5A0290A1A6F00270A17 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				8359A5A1290A1A7F00270A17 /* CCTVAnnotation.swift */,
+				09F0FDDC290D435D00F04BF2 /* CCTVClusterAnnotationView.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		8359A5AE290A4D1500270A17 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8359A5AF290A4D1E00270A17 /* Map */,
+				8359A5B0290A4D2200270A17 /* Preview */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8359A5AF290A4D1E00270A17 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				098F5D47290AEF10008BEFD9 /* Source Picker */,
+				098F5D33290AB537008BEFD9 /* CCTVMapWindowController.swift */,
+				098F5D2429098436008BEFD9 /* CCTVMapViewModel.swift */,
+				098F5CAF29088B9C008BEFD9 /* CCTVMapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8359A5B0290A4D2200270A17 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				8359A5BD290A5C7500270A17 /* CCTVViewModel.swift */,
+				8359A5B1290A4D2F00270A17 /* CCTVViewController.swift */,
+				09F0FDD4290D26A500F04BF2 /* CCTVWebViewController.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		8359A5B4290A5A9100270A17 /* MapApi */ = {
+			isa = PBXGroup;
+			children = (
+				8359A5B8290A5AB800270A17 /* Models */,
+				8359A5B7290A5AB200270A17 /* Targets */,
+				8359A5B5290A5A9E00270A17 /* MapApi.swift */,
+			);
+			path = MapApi;
+			sourceTree = "<group>";
+		};
+		8359A5B7290A5AB200270A17 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				8359A5BB290A5AFB00270A17 /* GeoLocatingDistrictApiTarget.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		8359A5B8290A5AB800270A17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8359A5B9290A5AC700270A17 /* DistrictLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		098F5CA929088B9C008BEFD9 /* TDX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 098F5CB929088B9D008BEFD9 /* Build configuration list for PBXNativeTarget "TDX" */;
+			buildPhases = (
+				098F5CA629088B9C008BEFD9 /* Sources */,
+				098F5CA729088B9C008BEFD9 /* Frameworks */,
+				098F5CA829088B9C008BEFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDX;
+			packageProductDependencies = (
+				094892F729101C1F00525CAE /* RxCocoa */,
+				094892F929101C1F00525CAE /* RxRelay */,
+				094892FB29101C1F00525CAE /* RxSwift */,
+				094892FE29101CC800525CAE /* Moya */,
+				0948930029101CC800525CAE /* RxMoya */,
+				0948930329101CE600525CAE /* KeychainAccess */,
+				09B2C918291153BE00E9452E /* XcapAppKit */,
+				09B2C91B2911540400E9452E /* XcapRxKit */,
+			);
+			productName = TDX;
+			productReference = 098F5CAA29088B9C008BEFD9 /* TDX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		098F5CA229088B9C008BEFD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					098F5CA929088B9C008BEFD9 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 098F5CA529088B9C008BEFD9 /* Build configuration list for PBXProject "TDX" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 098F5CA129088B9C008BEFD9;
+			packageReferences = (
+				094892F629101C1F00525CAE /* XCRemoteSwiftPackageReference "RxSwift" */,
+				094892FD29101CC800525CAE /* XCRemoteSwiftPackageReference "Moya" */,
+				0948930229101CE600525CAE /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				09B2C917291153BE00E9452E /* XCRemoteSwiftPackageReference "XcapAppKit" */,
+				09B2C91A2911540400E9452E /* XCRemoteSwiftPackageReference "XcapRxKit" */,
+			);
+			productRefGroup = 098F5CAB29088B9C008BEFD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				098F5CA929088B9C008BEFD9 /* TDX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		098F5CA829088B9C008BEFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098F5CB229088B9D008BEFD9 /* Assets.xcassets in Resources */,
+				098F5CB529088B9D008BEFD9 /* Main.storyboard in Resources */,
+				098F5D3B290ABB77008BEFD9 /* LoadingViewController.xib in Resources */,
+				09F0FDDE290D5A7100F04BF2 /* TDX-Config.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		098F5CA629088B9C008BEFD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098F5CD029088F5E008BEFD9 /* ApiRequestPlugin.swift in Sources */,
+				098F5D4E290AF353008BEFD9 /* CCTVSourcePickerViewModel.swift in Sources */,
+				098F5CFA290958D3008BEFD9 /* Token.swift in Sources */,
+				098F5D49290AEF27008BEFD9 /* CCTVSourcePickerController.swift in Sources */,
+				098F5D12290965BF008BEFD9 /* Bearing.swift in Sources */,
+				098F5CF729095607008BEFD9 /* AuthApi.swift in Sources */,
+				8359A5B6290A5A9E00270A17 /* MapApi.swift in Sources */,
+				098F5D4C290AEFD9008BEFD9 /* CCTVSourceCategory.swift in Sources */,
+				098F5CD529088FDC008BEFD9 /* ApiProviders.swift in Sources */,
+				098F5D2529098436008BEFD9 /* CCTVMapViewModel.swift in Sources */,
+				83F87F03290B9F9200951E0C /* CCTVCityApiTarget.swift in Sources */,
+				098F5CCE29088E73008BEFD9 /* ApiTargetType.swift in Sources */,
+				098F5D1A29096B18008BEFD9 /* CCTVList.swift in Sources */,
+				098F5D3D290ABD3B008BEFD9 /* SolidView.swift in Sources */,
+				098F5D0B2909634E008BEFD9 /* CCTV.swift in Sources */,
+				09BBF05A290DA86A00B330FE /* City+Ext.swift in Sources */,
+				098F5D3F290AC674008BEFD9 /* CCTVStream.swift in Sources */,
+				098F5CD329088FB9008BEFD9 /* ApiMonitorPlugin.swift in Sources */,
+				09F0FDD7290D358C00F04BF2 /* City.swift in Sources */,
+				8359A5BC290A5AFB00270A17 /* GeoLocatingDistrictApiTarget.swift in Sources */,
+				098F5D44290AE438008BEFD9 /* NSViewController+Ext.swift in Sources */,
+				8359A5A2290A1A7F00270A17 /* CCTVAnnotation.swift in Sources */,
+				098F5D0D290965A7008BEFD9 /* RoadSection.swift in Sources */,
+				09F0FDDB290D3CB300F04BF2 /* CCTV+Ext.swift in Sources */,
+				098F5D42290AD6FA008BEFD9 /* NSImage+Ext.swift in Sources */,
+				098F5CF5290953DD008BEFD9 /* TokenApiApiTarget.swift in Sources */,
+				098F5D0029095B40008BEFD9 /* AppStorage.swift in Sources */,
+				09F0FDD5290D26A500F04BF2 /* CCTVWebViewController.swift in Sources */,
+				8359A5BE290A5C7500270A17 /* CCTVViewModel.swift in Sources */,
+				098F5D34290AB537008BEFD9 /* CCTVMapWindowController.swift in Sources */,
+				0986DCBE290D833E00BD558A /* ApiError.swift in Sources */,
+				09F0FDDD290D435D00F04BF2 /* CCTVClusterAnnotationView.swift in Sources */,
+				09F0FDD9290D35E300F04BF2 /* CCTVSource.swift in Sources */,
+				83F87F05290BA4E300951E0C /* CCTVHighwayApiTarget.swift in Sources */,
+				098F5D1F29097747008BEFD9 /* ApiCategory.swift in Sources */,
+				098F5D3A290ABB77008BEFD9 /* LoadingViewController.swift in Sources */,
+				098F5D0229096035008BEFD9 /* ApiRequestRetrier.swift in Sources */,
+				098F5D0F290965AF008BEFD9 /* LookingView.swift in Sources */,
+				098F5CCA29088C89008BEFD9 /* Query.swift in Sources */,
+				0986DCBC290D7BB400BD558A /* ApiErrorMessage.swift in Sources */,
+				098F5D46290AECAF008BEFD9 /* MKCoordinateRegion+Ext.swift in Sources */,
+				098F5CB029088B9C008BEFD9 /* CCTVMapViewController.swift in Sources */,
+				098F5D1D2909773F008BEFD9 /* ApiVersion.swift in Sources */,
+				098F5D18290968B9008BEFD9 /* RoadApi.swift in Sources */,
+				8359A5BA290A5AC700270A17 /* DistrictLocation.swift in Sources */,
+				098F5D1629096761008BEFD9 /* CCTVFreewayApiTarget.swift in Sources */,
+				8359A5B2290A4D2F00270A17 /* CCTVViewController.swift in Sources */,
+				098F5CAE29088B9C008BEFD9 /* AppDelegate.swift in Sources */,
+				098F5CEB290895D2008BEFD9 /* TDXApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		098F5CB329088B9D008BEFD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				098F5CB429088B9D008BEFD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		098F5CB729088B9D008BEFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		098F5CB829088B9D008BEFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		098F5CBA29088B9D008BEFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TDX/TDX.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2C78ZAFN4V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TDX/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scchn.TDX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		098F5CBB29088B9D008BEFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TDX/TDX.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2C78ZAFN4V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TDX/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scchn.TDX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		098F5CA529088B9C008BEFD9 /* Build configuration list for PBXProject "TDX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098F5CB729088B9D008BEFD9 /* Debug */,
+				098F5CB829088B9D008BEFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		098F5CB929088B9D008BEFD9 /* Build configuration list for PBXNativeTarget "TDX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098F5CBA29088B9D008BEFD9 /* Debug */,
+				098F5CBB29088B9D008BEFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		094892F629101C1F00525CAE /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		094892FD29101CC800525CAE /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		0948930229101CE600525CAE /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		09B2C917291153BE00E9452E /* XCRemoteSwiftPackageReference "XcapAppKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/XCap-Team/XcapAppKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		09B2C91A2911540400E9452E /* XCRemoteSwiftPackageReference "XcapRxKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Xcap-Team/XcapRxKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		094892F729101C1F00525CAE /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 094892F629101C1F00525CAE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		094892F929101C1F00525CAE /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 094892F629101C1F00525CAE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		094892FB29101C1F00525CAE /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 094892F629101C1F00525CAE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		094892FE29101CC800525CAE /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 094892FD29101CC800525CAE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		0948930029101CC800525CAE /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 094892FD29101CC800525CAE /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		0948930329101CE600525CAE /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0948930229101CE600525CAE /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		09B2C918291153BE00E9452E /* XcapAppKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09B2C917291153BE00E9452E /* XCRemoteSwiftPackageReference "XcapAppKit" */;
+			productName = XcapAppKit;
+		};
+		09B2C91B2911540400E9452E /* XcapRxKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09B2C91A2911540400E9452E /* XCRemoteSwiftPackageReference "XcapRxKit" */;
+			productName = XcapRxKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 098F5CA229088B9C008BEFD9 /* Project object */;
+}

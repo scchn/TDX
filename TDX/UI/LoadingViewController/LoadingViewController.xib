@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LoadingViewController" customModule="TDX" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="NYa-MR-oSN" id="pYK-ma-PYg"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="SolidView" customModule="TDX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="VnV-22-p7L">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <view key="contentView" id="QJ3-ea-uPE">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressIndicator maxValue="100" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="NYa-MR-oSN">
+                                <rect key="frame" x="224" y="120" width="32" height="32"/>
+                            </progressIndicator>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NYa-MR-oSN" firstAttribute="centerY" secondItem="QJ3-ea-uPE" secondAttribute="centerY" id="eBL-vc-C4I"/>
+                            <constraint firstItem="NYa-MR-oSN" firstAttribute="centerX" secondItem="QJ3-ea-uPE" secondAttribute="centerX" id="kMG-0y-rD1"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" name="loading_background"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VnV-22-p7L" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="LPd-XM-VXa"/>
+                <constraint firstAttribute="trailing" secondItem="VnV-22-p7L" secondAttribute="trailing" id="O4W-PV-fTY"/>
+                <constraint firstAttribute="bottom" secondItem="VnV-22-p7L" secondAttribute="bottom" id="dSU-qF-n5b"/>
+                <constraint firstItem="VnV-22-p7L" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="nGj-Bx-lia"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-16"/>
+        </customView>
+    </objects>
+    <resources>
+        <namedColor name="loading_background">
+            <color red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
